@@ -1,0 +1,132 @@
+/* UNIVERSAL */
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    background-color: #F9F6F0;
+    position: absolute;
+    width: 100%;
+    font-family:'Classica-Pro', 'Times New Roman', Times, serif;
+    font-weight: 300;
+    margin: 0 auto; /* this will make content shrink and grow with screen size changes*/
+}
+
+.main-content {
+    margin-top: 100px;
+    width: 100%;    
+}
+
+/* NAVIGATION BAR */
+header {
+    margin-top: 0px;
+    width: 100%;
+    background-color: #F9F6F0;
+    position: fixed;
+    z-index: 1;
+    text-align: center;
+}
+
+header ul {
+    padding: 0px;
+    margin: 0px;
+}
+
+header li {
+    display: inline-block;
+    height: 50px;
+    padding: 30px;
+    list-style-type: none;
+    font-family: 'supria-sans', sans-serif;
+}
+
+header a {
+    color: #A78A7F;
+    text-decoration: none;
+}
+
+.main-content h1 {
+    color: #735751;
+    font-family: 'Classica-Pro', sans-serif;
+    font-weight: 300;
+    text-align: center;
+    font-size: 60px;
+}
+
+.main-content p {
+    font-family: 'Classica-Pro', Georgia, 'Times New Roman', Times, serif;
+    font-weight: 300;
+    text-align: center;
+    font-size-adjust: initial;
+    background-color: white;
+    width: fit-content;
+    border: 1px white solid;
+    padding: 10px;
+}
+
+.main-content h2 {
+    color:  #A78A7F;
+    font-family: 'supria-sans', sans-serif;
+    font-weight: 300;
+    font-size: 33px;
+    font-style: italic;
+    text-align: center;
+    background-color: white;
+    max-width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2px;
+    padding: 5px 5px;
+    border-radius: 30px;
+
+}
+
+.text {
+    text-align: center;
+    width: fit-content;
+    max-width: 700px;
+    border: 1px white solid;
+    padding: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
+
+table {
+    width: 700px;
+    background-color: white;
+    margin-left: auto;
+    margin-right: auto;
+    border: solid #735751 1px;
+    border-radius: 20px;
+    margin-bottom: 38px;
+}
+
+td {
+    padding: 10px 13px;
+    font-size: 10pt;
+    font-family: 'supria-sans', sans-serif;
+    font-weight: 300;
+}
+
+th{
+    padding:10px;
+    font-weight: 400;
+    font-size: 11pt;
+
+}
+
+.tag-table {
+    background-color: #D9CABF;
+
+}
+
+.tag-element{
+    width:fit-content;
+}
+
+footer h5{
+    text-align: center;
+    color: #735751;
+    font-weight: 300;
+}
