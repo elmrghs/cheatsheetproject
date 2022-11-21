@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+    <head> 
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles.css">
+        <link rel="stylesheet" href="https://use.typekit.net/dlw2alq.css">
+        <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Merriweather:ital@0;1&family=Sora:wght@400;600&family=Work+Sans:wght@400;500;800&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://use.typekit.net/snl1loj.css">
+       <title>emilie's cheatsheet</title>
+    </head>   
+    <header>
+        <!--navigation to other pages-->
+        <nav class="navbar">
+            <ul>
+                <li><a href="./index.html">home</a></li>
+                <li><a href="./index.html#target-html">html</a></li>
+                <li><a href="./index.html#target-css">css</a></li>
+            </ul>
+        </nav>
+    </header>
+    <body>
+    <main>
+    <!---title-->
+    <div class="main-content">
+        <div class="title">
+          <h1>ÉM'S CHEATSHEET</h1>
+        </div>
+      
+    <!--fundamentals of html-->
+        <div class="html-section">
+            <h2><a id="target-html">fundamentals of html</a></h2>
+              <p class="text"><strong>HTML, hypertext markup language:</strong> <strong>markup </strong>language defines the structure and presentation of raw text → computers interpret <strong>raw text </strong>wrapped in elements. 
+                <strong>hypertext </strong>is text displayed on a device that acts as a gateway to other text through links, aka <em>hyperlinks.</em>.</p>
+              
+              <!--semantics table-->
+              <p class="text"> <strong>semantic tags </strong>make websites more accessible for those who use screen readers and improves site SEO. they are not visible elements on the webpage, more like a categorisation system.</p>
+
+              <table>
+                <thead>
+                    <tr>
+                        <th>tag</th>
+                        <th>definition</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tag-table">
+                        <td class="tag-element"> &lt;header&gt;</td>
+                        <td> is a container most commonly used for navigational links or introductory content (h1-h6 often used here)</td>
+                    </tr>
+                    <tr>
+                        <td>&lt;nav&gt;</td>
+                        <td> defines a block of navigation links (menus, table of contents…); can be used inside of the < header > element and on it’s own</td>
+                    </tr>
+                    <tr class="tag-table">
+                        <td class="tag-element"> &lt;main&gt;</td>
+                        <td> used to encapsulate the dominant content within a webpage. using < main > enables screen readers/browsers to better identify the priority/bulk content. </td>
+                    </tr>
+                    <tr>
+                        <td>&lt;footer&gt;</td>
+                        <td> indicates the content at the bottom of the webpage; normally contains contact info, copyright info, terms of use, site map, reference to top of page links</td>
+                    </tr>
+                </tbody>
+              </table>
+
+              <!--common tags table-->
+              <p class="text">below is a list of common tags used in html, that will eventually become second nature.</p>
+
+              <table>
+                <thead>
+                    <tr>
+                        <th>tag</th>
+                        <th>used for</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr class="tag-table">
+                        <td class="tag-element"> &lt;h1&gt; </td>
+                        <td>the heading tag always starts with 'h' and runs from h1 to h6, 1 being the largest heading and 6 being the smallest.</td>
+                    </tr>
+                    <tr> 
+                        <td> &lt;p&gt;</td>
+                        <td>the paragraph tag is used for body text, things that are not titles to something else.</td>
+                    </tr>
+                    <tr class="tag-table">
+                        <td class="tag-element"> &lt;a&gt;</td>
+                        <td>the anchor tag is used to link to internal pages, external pages or content on the same page.</td>
+                    </tr>
+                    <tr>
+                        <td> &lt;ol&gt;</td>
+                        <td>the ordered list tag creates a numbered list.</td>
+                    </tr>
+                    <tr class="tag-table">
+                        <td class="tag-element"> &lt;ul&gt;</td>
+                        <td>the unordered list tag creates a list marked with bullet points.</td>
+                    </tr>
+                    <tr>
+                        <td> &lt;l&gt;</td>
+                        <td>the list tag is used within an ordered (ol) or unordered list (ul).</td>
+                    </tr>
+                    <tr class="tag-table">
+                        <td class="tag-element"> &lt;div&gt;</td>
+                        <td>the division tag is a <em>hidden tag</em> used for creating enclosed blocks of html.</td>
+                    </tr>
+                    <tr>
+                        <td> &lt;span&gt;</td>
+                        <td>the span tag is a <em>hidden tag</em> used to separate small pieces of content that share the same line as other content.</td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+
+    <!--fundamentals of css-->
+        <div class="css-section">
+
+            <h2><a id="target-css">fundamentals of css</a></h2>
+            <p class="text"><strong> CSS, cascading style sheets:</strong> styling language used to style html content, such as colours, font types, don't sizes, images, positioning..etc.</p>
+              
+              <!--types of selectors table-->
+              <p class="text"><strong>selectors </strong>identify the specific html element to be styled by the <em>declaration.</em></p>
+
+              <table>
+                <thead>
+                    <tr>
+                        <th>selector</th>
+                        <th>used for</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>type, p</td>
+                        <td>the type selector matches a given type of the element in the html document; does not need the < >; can also be tag name or element selector</td>
+                    </tr>
+                    <tr class="tag-table">
+                        <td class="tag-element">universal, *</td>
+                        <td>the universal selector selects all elements of any type; uses * character in place of type selector</td>
+                    </tr>
+                    <tr>
+                        <td>class, .class</td>
+                        <td>the class selector is used to select an element in html/css with a class attribute; to select an html element with a class, it should be .classname</td>
+                    </tr>
+                    <tr class="tag-table">
+                        <td class="tag-element">id, #id</td>
+                        <td>id tags should be used when an element needs to be styled uniquely; can only have a single value; used once per page; found using #</td>
+                    </tr>
+                    <tr>
+                        <td>attribute, [attr]</td>
+                        <td>attribute selector used to target html element that already contain attributes</td>
+                    </tr>
+                    <tr class="tag-table">
+                        <td class="tag-element">valued attribute, [attr*='value']</td>
+                        <td>used to select an element where the attribute contains any instance of the specified value</td>
+                    </tr>
+                    <tr>
+                        <td>pseudo-class, :hover</td>
+                        <td>pseudo-class selectors are used to style a changing element, for example: when the submit button is greyed out until all the required fields are filled out </td>
+                    </tr>
+                </tbody>
+              </table>
+              <!--common keys/properties table-->
+              <p class="text"><strong>properties </strong> are the first part of a css declaration. they are used to signify what visual characteristic of the element will be modified.</p>
+
+              <table>
+                <thead>
+                    <tr>
+                        <th>property</th>
+                        <th>used for</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>font-family</td>
+                        <td>tells browser what typeface to display</td>
+                    </tr>
+                    <tr class="tag-table">
+                        <td class="tag-element">font-size</td>
+                        <td>tells the browser what size font to use</td>
+                    </tr>
+                    <tr>
+                        <td>text-align</td>
+                        <td>tells the browser where to align the text. start, end, left, right, center or justify can be used</td>
+                    </tr>
+                    <tr class="tag-table">
+                        <td class="tag-element">color</td>
+                        <td>changes the foreground color</td>
+                    </tr>
+                    <tr>
+                        <td>background-color</td>
+                        <td>changes the background color</td>
+                    </tr>
+                    <tr class="tag-table">
+                        <td class="tag-element">opacity</td>
+                        <td>used to dictate the opacity of an element, uses integers</td>
+                    </tr>
+                    <tr>
+                        <td>text-decoration</td>
+                        <td>applies a decoration or clears it from a piece of text. none, underline, overline, line-through or blink can be used</td>
+                    </tr>
+                    <tr class="tag-table">
+                        <td class="tag-element">display</td>
+                        <td>helps to position elements on the page. google this as there are many options</td>
+                    </tr>
+                    <tr>
+                        <td>padding</td>
+                        <td>applies padding around an element. top, left, bottom, middle can be used</td>
+                    </tr>
+                    <tr class="tag-table">
+                        <td class="tag-element">margin</td>
+                        <td>applies a margin to an element. top, left, bottom, middle can be used</td>
+                    </tr>
+                    <tr>
+                        <td>border</td>
+                        <td>applies a border to an element. top, left, bottom, middle can be used</td>
+                    </tr>
+                </tbody>
+              </table>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+        <h5>copyright elmrghs</h5>
+    </footer>
+
+    </body>
+</html>
